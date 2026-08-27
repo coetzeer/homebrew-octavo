@@ -17,15 +17,10 @@ brew install oh-my-bash
 
 ## Formulae
 
-- `oh-my-bash` — the Oh My Bash framework. Upstream never tags releases, so
-  the stable URL is pinned to a commit and the formula version is that
-  commit's date (e.g. `2026-08-21`); `livecheck` is skipped for the same
-  reason. Install it, then follow the caveats
-  (`brew info coetzeer/homebrew-octavo/oh-my-bash`) to wire it into
-  `~/.bashrc`.
-- `oh-my-zsh` — the Oh My Zsh framework. Same untagged-upstream situation as
-  oh-my-bash: pinned to a commit with a date version. Depends on `zsh`.
-  Follow the caveats to wire it into `~/.zshrc`.
-- `oh-my-fish` — the Oh My Fish framework (v8, tagged upstream). Depends on
-  `fish`. Follow the caveats to wire it into `~/.config/fish/config.fish`;
-  note that `omf install` writes into the brew-managed keg.
+| Formula | Description | Upstream | Versioning |
+|---|---|---|---|
+| `oh-my-bash` | Bash framework: themes, plugins, aliases, completions | [ohmybash/oh-my-bash](https://github.com/ohmybash/oh-my-bash) | Untagged — pinned commit, date version, `livecheck` skipped |
+| `oh-my-zsh` | Zsh framework: themes, plugins, completions | [ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) | Untagged — pinned commit, date version, `livecheck` skipped |
+| `oh-my-fish` | Fish framework: packages, themes, `omf` CLI | [oh-my-fish/oh-my-fish](https://github.com/oh-my-fish/oh-my-fish) | Tagged — tracks upstream releases (v8) |
+
+After installing, follow each formula's caveats (`brew info coetzeer/homebrew-octavo/<formula>`) to wire the framework into its shell config.
