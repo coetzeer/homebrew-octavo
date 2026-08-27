@@ -38,7 +38,10 @@ class OhMyBash < Formula
 
   test do
     ENV["DISABLE_AUTO_UPDATE"] = "true"
-    output = shell_output("bash --noprofile --norc -ic 'export OSH=#{opt_libexec}; source \"$OSH/oh-my-bash.sh\"; printf \"%s\" \"$OMB_VERSION\"' 2>/dev/null")
+    output = shell_output(
+      "bash --noprofile --norc -ic 'export OSH=#{opt_libexec}; " \
+      "source \"$OSH/oh-my-bash.sh\"; printf \"%s\" \"$OMB_VERSION\"' 2>/dev/null",
+    )
     assert_match(/1\.0\.0/, output)
   end
 end
