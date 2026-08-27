@@ -5,8 +5,9 @@ A Homebrew tap — a small cellar of formulae and casks, brewed in octavo (eight
 ## Usage
 
 ```bash
-brew tap <user>/homebrew-octavo
-brew install <formula>
+brew tap coetzeer/homebrew-octavo
+brew trust coetzeer/octavo   # brew 6+ refuses untrusted taps; do this once
+brew install oh-my-bash
 ```
 
 ## Layout
