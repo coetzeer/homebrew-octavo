@@ -7,13 +7,13 @@ class OhMyZsh < Formula
   license "MIT"
   head "https://github.com/ohmyzsh/ohmyzsh.git", branch: "master"
 
-  depends_on "zsh"
-
   # oh-my-zsh never tags releases, so there is no stable version to track:
   # the URL is pinned to a commit and `version` is that commit's date.
   livecheck do
     skip "Project has no tags or releases; version is pinned to the commit date"
   end
+
+  depends_on "zsh"
 
   def install
     libexec.install Dir["*"]
