@@ -23,3 +23,9 @@ brew install oh-my-bash
   reason. Install it, then follow the caveats
   (`brew info coetzeer/homebrew-octavo/oh-my-bash`) to wire it into
   `~/.bashrc`.
+- `oh-my-zsh` — the Oh My Zsh framework. Same untagged-upstream situation as
+  oh-my-bash: pinned to a commit with a date version. Depends on `zsh`.
+  Follow the caveats to wire it into `~/.zshrc`.
+- `oh-my-fish` — the Oh My Fish framework (v8, tagged upstream). Depends on
+  `fish`. Follow the caveats to wire it into `~/.config/fish/config.fish`;
+  note that `omf install` writes into the brew-managed keg.
