@@ -1,9 +1,9 @@
 class OhMyBash < Formula
   desc "Delightful community-driven framework for managing your bash configuration"
   homepage "https://github.com/ohmybash/oh-my-bash"
-  url "https://github.com/ohmybash/oh-my-bash/archive/8d7c836755fea6747d6f7b569c4e598120bfd691.tar.gz"
-  version "2026-08-21"
-  sha256 "e19c057242ca08918fb5bbc9d012382640f5c113681cc84e507f2135b51f035f"
+  url "https://github.com/ohmybash/oh-my-bash/archive/0bd2d2c79e2ffb94dc25b4f039c0e7edbf1ae48e.tar.gz"
+  version "2026-08-30"
+  sha256 "cf8d33ba2de0595c43913d13d6acac403f5633c60a446c5fbed6619e768126b2"
   license "MIT"
   head "https://github.com/ohmybash/oh-my-bash.git", branch: "master"
 
